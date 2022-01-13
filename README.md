@@ -25,13 +25,6 @@ Start developing right away!
 
   don't need it? just remove it 😃
 
-[![CodeFactor](https://www.codefactor.io/repository/github/sozonome/nextarter-base/badge)](https://www.codefactor.io/repository/github/sozonome/nextarter-base)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-base&metric=alert_status)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-base) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-base&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-base) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-base&metric=bugs)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-base) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-base&metric=code_smells)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-base) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-base&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-base)
-
-[![Depfu](https://badges.depfu.com/badges/9e426e58f99c3bd470987a3c6b014a96/overview.svg)](https://depfu.com/github/sozonome/nextarter-base?project_id=26148) [![Depfu](https://badges.depfu.com/badges/9e426e58f99c3bd470987a3c6b014a96/count.svg)](https://depfu.com/github/sozonome/nextarter-base?project_id=26148)
-
-[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
-
 ## Getting Started
 
 You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
