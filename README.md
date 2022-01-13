@@ -21,10 +21,6 @@ Start developing right away!
 
   with `next-seo` and `next-sitemap`. you'll need to reconfigure or tinker with it to get it right according to your needs, but it's there if you need it.
 
-- 🎨 basic responsive layout configured
-
-  don't need it? just remove it 😃
-
 ## Getting Started
 
 You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
