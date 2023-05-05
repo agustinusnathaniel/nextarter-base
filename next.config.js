@@ -4,7 +4,4 @@ module.exports = {
   eslint: {
     dirs: ["src"],
   },
-  experimental: {
-    appDir: true,
-  }
 };
