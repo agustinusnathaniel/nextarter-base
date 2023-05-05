@@ -1,29 +1,29 @@
-import "lib/styles/globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+import '~/lib/styles/globals.css';
 
-const APP_NAME = "nextarter-base";
+const inter = Inter({ subsets: ['latin'] });
+
+const APP_NAME = 'nextarter-base';
 
 export const metadata: Metadata = {
   title: APP_NAME,
-  description: "Next.js App with TypeScript setup",
-  icons: "/favicon.ico",
+  description: 'Next.js App with TypeScript setup',
   viewport: {
-    width: "device-width",
+    width: 'device-width',
     initialScale: 1,
   },
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
     title: APP_NAME,
-    statusBarStyle: "default",
+    statusBarStyle: 'default',
   },
   formatDetection: {
     telephone: false,
   },
-  themeColor: "#FFFFFF",
+  themeColor: '#FFFFFF',
 };
 
 export default function RootLayout({
