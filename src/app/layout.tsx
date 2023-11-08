@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
 import '~/lib/styles/globals.css';
@@ -10,10 +10,6 @@ const APP_NAME = 'nextarter-base';
 export const metadata: Metadata = {
   title: APP_NAME,
   description: 'Next.js App with TypeScript setup',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
   applicationName: APP_NAME,
   appleWebApp: {
     capable: true,
@@ -23,6 +19,11 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#FFFFFF',
 };
 
