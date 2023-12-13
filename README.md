@@ -15,7 +15,7 @@ Start developing right away!
 
 - 📱 PWA-ready
 
-  `next-pwa` configured, disabled by default, just enable it through `next.config.js`
+  `next-pwa` configured, enabled by default, just disable it through `next.config.js`
 
 - 🔎 SEO optimization configured
 
