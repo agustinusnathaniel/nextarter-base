@@ -17,9 +17,7 @@ Start developing right away!
 
   `next-pwa` configured, enabled by default, just disable it through `next.config.js`
 
-- 🔎 SEO optimization configured
-
-  with `next-seo` and `next-sitemap`. you'll need to reconfigure or tinker with it to get it right according to your needs, but it's there if you need it.
+- 🔎 SEO optimization configured with `next-sitemap`
 
 ## Getting Started
 
