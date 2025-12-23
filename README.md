@@ -1,46 +1,106 @@
 # nextarter-base
-
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agustinusnathaniel/nextarter-base) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/nextarter-base)
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/agustinusnathaniel/nextarter-base)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [**TypeScript**](https://www.typescriptlang.org) setup.
-Start developing right away!
 
-## 🔋⚡ Battery Packed template
+A minimalist, high-performance Next.js starter template designed for modern web development. It features a lean architecture with a focus on developer experience, type safety, and efficient tooling.
 
-- ✔️ toolings for linting, formatting, and conventions configured
+## 🚀 Overview
 
-  `eslint`, `prettier`, `husky`, `lint-staged`, and `standard-version`
+`nextarter-base` is a "no-fluff" foundation for building Next.js applications. It prioritizes speed, strict standards, and modern best practices using React 19 and the Next.js App Router.
 
-- 📱 PWA-ready
+### Problem it Solves
+- Eliminates the boilerplate fatigue of setting up a new Next.js project.
+- Enforces consistent code quality through Biome (no more ESLint/Prettier conflicts).
+- Provides a high-performance build pipeline with TurboRepo.
+- Ensures commit quality with Git hooks.
 
-  `next-pwa` configured, enabled by default, just disable it through `next.config.js`
+### High-Level Architecture
 
-- 🔎 SEO optimization configured with `next-sitemap`
+```mermaid
+graph TD
+    User([User Browser]) --> NextJS[Next.js App Router]
+    
+    subgraph "Source (src/)"
+        NextJS --> Pages[app/ Routing & Layout]
+        NextJS --> Styles[lib/styles Global CSS]
+        Pages --> Utils[lib/ Utilities]
+    end
 
-## Getting Started
+    subgraph "Tooling"
+        BIOME[Biome Linter/Formatter]
+        TURBO[TurboRepo Task Runner]
+        TS[TypeScript Type Safety]
+    end
 
-You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
-
-```bash
-npx degit agustinusnathaniel/nextarter-base <YOUR_APP_NAME>
+    Pages -.-> BIOME
+    Utils -.-> BIOME
+    TURBO --> NextJS
 ```
 
-Then, run the development server:
+## 🛠 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
+- **Framework**: [Next.js 16 (Canary/Next)](https://nextjs.org/)
+- **Library**: [React 19](https://react.dev/)
+- **Linter/Formatter**: [Biome](https://biomejs.dev/)
+- **Monorepo/Build Tool**: [TurboRepo](https://turbo.build/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Git Hooks**: [Husky](https://typicode.github.io/husky/) + [commitlint](https://commitlint.js.org/)
+- **Deployment**: Optimized for Vercel, Netlify, or Cloudflare Workers.
+
+## 📁 Repository Structure
+
+```text
+.
+├── .github/          # CI/CD Workflows
+├── .husky/           # Git hooks configuration
+├── src/
+│   ├── app/          # App Router: Routes, Layouts, APIs
+│   └── lib/          # Shared utilities and styles
+│       └── styles/   # Global CSS
+├── biome.json        # Biome linting and formatting rules
+├── next.config.ts    # Next.js configuration
+├── turbo.json        # TurboRepo task definitions
+└── package.json      # Dependencies and scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⌨️ Development Workflows
 
-You can start editing the page by modifying `src/pages/index.js`. The page auto-updates as you edit the file.
+### Prerequisites
+- [Node.js](https://nodejs.org/) (Version specified in `.nvmrc`)
+- [pnpm](https://pnpm.io/) (Latest version recommended)
 
-## References
+### Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [TypeScript](https://www.typescriptlang.org)
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm dev
+
+# Build for production
+pnpm build
+```
+
+### Common Commands
+
+| Command | Description |
+| :--- | :--- |
+| `pnpm dev` | Starts development server on `localhost:3000` |
+| `pnpm build` | Builds the application for production |
+| `pnpm biome:check` | Checks code formatting and lint rules |
+| `pnpm biome:fix` | Automatically fixes lint/format issues |
+| `pnpm type:check` | Runs TypeScript compiler check |
+| `pnpm release` | Creates a new tag and updates changelog |
+
+## 🧪 Testing
+
+This template includes a baseline Playwright setup for E2E testing.
+```bash
+pnpm test:e2e
+```
+
+---
+Built with ❤️ by [agustinusnathaniel](https://github.com/agustinusnathaniel)
